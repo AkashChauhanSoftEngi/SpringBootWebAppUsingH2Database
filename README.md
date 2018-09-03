@@ -30,3 +30,30 @@
 
 > **###4.  Access** 
 * http://localhost:8080, http://localhost:8080/person
+
+> **###5. Important points to remember**
+* Only need to add h2 db dependency in the POM, while using h2 DB
+* A test class will be creadted automatically and @SpringBootTest will be added to it
+* thymeleaf is being used in html, in this project to function over web page data
+  - In a simple language we can say it is similar to tag lib, but optimized one
+* To use jpa feature we need to create an interface which extend JpaRepository<POJO,data type{id}> interface
+  - also we can extend multiple interfaces{your own interface implementation}
+  - When we create our own repository class we can use EntityManager for further functions
+* By using this interface we can directly use predefined functions of jpa [ORM] 
+* When using h2 Database with Spring Boot
+  - It is an open source db
+  - Very useful for testing and development
+  - Very fast
+  - No need to setup anything much
+  - To enable h2 Database
+```text
+	spring.h2.console.enabled=true
+```
+  - To access db from browser
+```text
+	link: [http://localhost:8080/h2-console]
+```
+  - To use your own db name then use
+```text
+	spring.h2.console.path=/h2console
+```
