@@ -26,7 +26,7 @@
 
 > **###3. To Run this project locally**
 * $ git clone https://github.com/AkashChauhanSoftEngi/SpringBootWebAppUsingH2Database
-* $ mvn tomcat7:run
+* $ tomcat {Embedded}
 
 > **###4.  Access** 
 * http://localhost:8080, http://localhost:8080/person
